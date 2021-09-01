@@ -11,7 +11,7 @@ class CustomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => IndividualPage()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => IndividualPage(chatModel: chatModel,)));
       },
       child: Column(
         children: [
